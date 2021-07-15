@@ -1,0 +1,309 @@
+/* General Styles intended for overall use */
+:root {
+    --headerColor: rgb(3, 7, 70);
+    --light: #ffffff;
+    --fontColor: rgb(8, 8, 8);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  * {
+    color: var(--fontColor);
+    scroll-behavior: smooth;
+  }
+  
+  /* HEADER SECTION customization */
+  header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: inline-flex;
+    align-content: space-between;
+    padding: 10px;
+    background-color: var(--headerColor);
+    width: 100%;
+    height: 80px;
+  }
+
+  /* Personalizacion del header title */
+  header div {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    background-color: var(--headerColor);
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+
+  h1 {
+    font-size: 200%;
+    position: absolute;
+    bottom: 0;
+    color: var(--light);
+  }
+
+  header a {
+    margin: 10px;
+  }
+
+
+  body {
+    background-color: var(--light);
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .navnav{
+    color: rgb(237, 242, 243);
+    text-decoration: none;
+  }
+  
+  /*Proprties for background image*/
+  .imageEl {
+    width: 100%;
+    display: inline;
+  }
+  
+
+
+  /* MAIN SECTION customization */
+  article {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 150px;
+    width: 100%;
+    margin-top: 73px;
+  }
+
+    /* Name: Nicolas C A properties of article and background image */
+    article h2 {
+        position: absolute;
+        font-size: 250%;
+        padding: 30px;
+        margin: 15px;
+        bottom: 0;
+        color: var(--light);
+      }
+
+  main img {
+    border-radius: 10px;
+  }
+  
+  /* The HTML <section> tags will have this properties */
+  section {
+    padding: 5px;
+    display: inline-flex;
+    height: auto;
+    width: 100%;
+  }
+  
+  h2 {
+    padding-right: 10px;
+  }
+  
+  /* Setting up H2 <Project & contact sections>  */
+  section h2,
+  footer h2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    font-size: 250%;
+    margin-bottom: 50px;
+  }
+  
+  section p {
+    font-size: 150%;
+    padding: 5px;
+    height: auto;
+    width: 80%;
+    border-left: 4px solid var(--fontColor);
+    padding-left: 35px;
+  }
+  
+  /* Img of the principal project*/
+  .image-principal {
+    width: 80%;
+    border-left: 4px solid var(--fontColor);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* <figuere> tag will have this properties */
+  figure {
+    position: relative;
+    background-color: rgb(91, 152, 231);
+  }
+  
+  /**/
+  #image1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: auto;
+    width: 900px;
+    border: 10px ridge rgb(91, 152, 231);
+    border-radius: 20px;
+  }
+  
+  /*Creating a hover to add a blurry effect to the project images*/
+  #image1 img:hover,
+  .imagesEl img:hover {
+    filter: blur(0px);
+  }
+  
+  /*add a blurry effect to the project images*/
+  .filter {
+    transition: 0.6s;
+    filter: blur(1.9px);
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Titles over the projects */
+  h3 {
+    position: absolute;
+    top: 5%;
+    z-index: 1;
+    border-top: 1px solid rgb(91, 152, 231);
+    border-bottom: 1px solid rgb(91, 152, 231);
+    border-right: 1px solid rgb(91, 152, 231);
+    font-size: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 150px;
+    background-color: rgb(91, 152, 231);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .imagesEl {
+    margin: 10px;
+    height: auto;
+    width: 440px;
+    border: 10px ridge rgb(91, 152, 231);
+    border-radius: 20px;
+  }
+  
+  /* FOOTER CONFIG */
+  footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    margin: 5px;
+  }
+  
+  footer h2 {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+  }
+  
+  footer div {
+    border-left: 4px solid var(--fontColor);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer a {
+    margin: 30px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+
+  /* RESPONSIVE LAYOUT CONFIGS  */
+  @media screen and (max-width: 1024px) {
+      * {
+        font-size: 93%;
+      }
+      .font-sizing {
+        font-size: 3vw;
+      }
+      footer div {
+        flex-direction: column;
+      }
+    }
+    
+    @media screen and (max-width: 992px) {
+      * {
+        font-size: 90%;
+      }
+      h1 {
+        font-size: 120%;
+      }
+    }
+
+    @media screen and (max-width: 690px) {
+      nav {
+        flex-direction: column;
+        /* margin-top: 150px; */
+      }
+      footer div {
+        flex-direction: column;
+        /* position: relative; */
+      }
+      header {
+        height: 140px;
+        font-size: 15px;
+        padding-top: 20px;
+        /* display: inline-flex; */
+        /* position: relative; */
+      }
+      /* .titleP{
+        display: inline-block;
+        width: 100%;
+      } */
+      h1 {
+        font-size: 100%;
+      }
+      article {
+        margin-top: 165px;
+      }
+      article h2 {
+        font-size: 170%;
+      }
+      footer a {
+        font-size: 120%;
+      }
+      footer h2 {
+        font-size: 165%;
+      }
+    }
+  
+  @media screen and (max-width: 460px) {
+    nav a {
+      font-size: 14px;
+    }
+    main {
+      font-size: 70%;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    header a {
+      font-size: 15px;
+    }
+    main {
+      font-size: 63%;
+    }
+    header {
+      font-size: 50%;
+    }
+  }
