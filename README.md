@@ -1,4 +1,4 @@
-# Unit 02 - Advanced CSS: Portfolio
+# Personal Portfolio
 
 ## Project
 
@@ -59,7 +59,7 @@ The following image shows the web application's appearance :
 
 ## URL of deployment
 
-Link: https://navena9.github.io/02-Personal-Portfolio/
+Link: <a href="https://navena9.github.io/02-Personal-Portfolio-Updated/" target="_blank">Personal Portfolio</a>
 
 
 
